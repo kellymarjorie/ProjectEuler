@@ -1,3 +1,3 @@
 # ProjectEuler
 
-Solutions for the Project Euler problems.
+Solutions for the Project Euler problems in Javascript.
