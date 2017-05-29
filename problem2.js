@@ -7,7 +7,7 @@
 var x = 1; // first fib number
 var y = 2; // second fib number
 var i = 1; // starting point for while loop.
-var max = 100; // number limit.
+var max = 4000000; // number limit.
 var sum = [y]; // array for the fib numbers. 1 and 2 are already added.
         
 function fibba() {
@@ -16,13 +16,13 @@ function fibba() {
             i = y + x; // adds the last two fib numbers to get the next number.
             x = y; // x now equals the number y was
             y = i; // y now equals the sum of y and x
-            // if (i % 2 === 0) { // if the sum of the 2 fib numbers is an even number
+            if (i % 2 === 0) { // if the sum of the 2 fib numbers is an even number
                 sum.push(i); // add that number to the array
             }
         }
     }
-    // var total = sum.reduce(function(a, b) {return a +b;}); // adds together the sum of all the numbers (even) in the array.
-    return sum;
+    var total = sum.reduce(function(a, b) {return a +b;}); // adds together the sum of all the numbers (even) in the array.
+    return total;
 };
 
 console.log(fibba());
